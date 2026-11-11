@@ -3774,5 +3774,13 @@ html body .hero .wrap>div:first-child{box-shadow:0 18px 40px -20px rgba(114,46,2
 html body .scenic .scenic-title .l1{font-family:'Noto Serif',Georgia,serif!important;font-weight:900!important;font-size:clamp(30px,4.7vw,68px)!important;letter-spacing:.015em;line-height:1!important;color:#fff!important;-webkit-text-stroke:1.2px rgba(70,24,10,.55);paint-order:stroke fill;text-shadow:0 2px 0 rgba(90,32,12,.55),0 4px 10px rgba(0,0,0,.55),0 0 26px rgba(0,0,0,.35)!important}
 html body .scenic .scenic-title .l2{margin-top:.15em!important}
 </style>
+<style id="pl-shine">
+/* Vệt sáng chạy dưới câu "Vẻ đẹp miền di sản…" */
+@keyframes plShine{0%{background-position:-60% 0,0 0}100%{background-position:160% 0,0 0}}
+html body .scenic .scenic-title .l2{display:inline-block!important;position:relative;padding-bottom:.28em}
+html body .scenic .scenic-title .l2::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;
+  background:linear-gradient(90deg,transparent 0,rgba(255,255,255,.95) 50%,transparent 100%) no-repeat,linear-gradient(90deg,rgba(255,241,214,.18),rgba(255,241,214,.38),rgba(255,241,214,.18));
+  background-size:38% 100%,100% 100%;filter:drop-shadow(0 0 6px rgba(255,236,190,.9));animation:plShine 2.8s linear infinite}
+</style>
 </body>
 </html>
