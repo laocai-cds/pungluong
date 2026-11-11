@@ -3756,5 +3756,12 @@ html body .bar .barright{margin-top:clamp(10px,2.4vh,24px)!important}
 }
 @media(max-width:900px){html body .adm-bottom{display:none!important}}
 </style>
+<style id="pl-side">
+/* Menu trái rộng hơn, sát bảng chính, tên đơn vị không bị cắt */
+@media(min-width:1024px){:root{--side:392px!important}
+html body .bar .brand b{font-size:16.5px!important;white-space:nowrap!important;overflow:visible!important}
+html body .bar .brand{gap:10px!important;min-width:0}
+html body .bar .brand>div{min-width:0}}
+</style>
 </body>
 </html>
