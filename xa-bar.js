@@ -49,7 +49,7 @@
     var out = [];
 
     if (cfg.seg.tq) out.push('📊 Đến nay ' + done.length + '/' + act.length + ' chi bộ hoàn thành; ' + paid + '/' + due +
-      ' đảng viên đã nộp đảng phí (' + fmt(paid / due * 100) + '%).');
+      ' đảng viên đã nộp đảng phí (' + fmt(Math.min(100, paid / due * 100)) + '%).');
 
     var dl = 'hạn nộp đảng phí tháng ' + mon + ' là ngày ' + D + '/' + mon;
     if (!cfg.seg.han) { /* bỏ qua */ } else if (left > 0) out.push('⏰ Còn ' + left + ' ngày đến ' + dl + '.');
